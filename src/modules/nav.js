@@ -29,16 +29,6 @@ const Nav = () => (
               <Body>Home</Body>
             </Link>
           </li>
-          <li>
-            <Link to="/crud">
-              <Body>CRUD</Body>
-            </Link>
-          </li>
-          <li>
-            <Link to="/layout">
-              <Body>Layout</Body>
-            </Link>
-          </li>
         </Ul>
       </Col>
     </Row>

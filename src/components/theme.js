@@ -29,7 +29,7 @@ const theme = {
   colors: {
     primary: "red",
     secondary: "green",
-    bodyBackground: "#f2f7ff",
+    bodyBackground: "#fff",
   },
 };
 

@@ -1,22 +1,26 @@
 import React from "react";
+import styled from "styled-components";
+
+import { Title } from "components/text";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Nav from "modules/nav";
 import Home from "routes/home";
-import Crud from "routes/crud";
-import Layout from "routes/layout";
+
+const inProgress = true;
+
+const Center = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`;
 
 function App() {
   return (
     <Router>
-      <Nav />
+      {/* <Nav /> */}
       <Switch>
-        <Route path="/crud">
-          <Crud />
-        </Route>
-        <Route path="/layout">
-          <Layout />
-        </Route>
         <Route path="/">
           <Home />
         </Route>
@@ -25,4 +29,13 @@ function App() {
   );
 }
 
-export default App;
+const constructionPage = () => {
+  return (
+    <Center>
+      {" "}
+      <Title type="h1">Under construction</Title>
+    </Center>
+  );
+};
+
+export default inProgress ? constructionPage : Home;
