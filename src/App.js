@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Title } from "components/text";
+import { Title, Body } from "components/text";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Nav from "modules/nav";
@@ -11,6 +11,7 @@ const inProgress = true;
 
 const Center = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -32,8 +33,8 @@ function App() {
 const constructionPage = () => {
   return (
     <Center>
-      {" "}
       <Title type="h1">Under construction</Title>
+      <Body light>DylanCarver.github.io</Body>
     </Center>
   );
 };

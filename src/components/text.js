@@ -8,9 +8,10 @@ export const Title = ({ children, type, ...rest }) => {
   return <Tag {...rest}>{children}</Tag>;
 };
 
-export const Body = ({ children, ...rest }) => {
+export const Body = ({ children, light, ...rest }) => {
   const Tag = styled.p`
     margin: 0;
+    opacity: ${light ? 0.5 : 1};
     font-family: ${(props) => props.theme.fonts.body};
   `;
   return <Tag {...rest}>{children}</Tag>;
