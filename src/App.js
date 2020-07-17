@@ -30,6 +30,7 @@ function App() {
 
 const StyledCard = styled(Card)`
   display: flex;
+  margin: 25px;
   flex-direction: column;
   padding: 35px 50px;
   align-items: center;
