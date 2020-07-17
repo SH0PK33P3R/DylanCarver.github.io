@@ -38,4 +38,4 @@ const constructionPage = () => {
   );
 };
 
-export default inProgress ? constructionPage : Home;
+export default inProgress ? constructionPage : App;
