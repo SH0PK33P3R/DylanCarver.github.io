@@ -23,7 +23,13 @@ const UnderConstruction = () => {
   return (
     <Center>
       <StyledCard>
-        <div style={{ fontSize: 50 }}>🚧</div>
+        <span
+          role="img"
+          aria-label="construction sign"
+          style={{ fontSize: 50 }}
+        >
+          🚧
+        </span>
         <Title type="h1">Under construction...</Title>
         <Body>DylanCarver.github.io</Body>
       </StyledCard>
